@@ -6,4 +6,6 @@ Rails.application.routes.draw do
     end
   end
   root 'companies#index'
+  get '/signup' => 'users#new'
+  post '/signup' => 'users#create'
 end

@@ -4,4 +4,6 @@ class User < ActiveRecord::Base
   # - *.password = : takes a plain text password, salts and hashes it, and
   # stores it in the database
   has_secure_password
+  # make sure that each user has a non-blank and unique email
+  validates :email, prescence: true, uniqueness: true
 end
