@@ -7,10 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%#<header>%>
-    <%#<div class="logo">NestedAuthPry</div>%>
-    <%#<div class="login">Username email</div>%>
-  <%#</header>%>
+  <header>
+    <div class="logo">NestedAuthPry</div>
+    <div class="login">
+    <%= form_tag login %>
+
+    </div>
+  </header>
   <%= yield %>
 
 </body>
