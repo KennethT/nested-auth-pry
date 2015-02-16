@@ -11,7 +11,7 @@
     <% @product.reviews.each do |review| %>
     <tr>
       <td> <%= link_to review.title, company_product_review_path(@product.company, @product, review) %></td>
-      <% binding.pry %>
+
       <td> <%= review.description %></td>
       <td> <%= review.rating %></td>
     </tr>
