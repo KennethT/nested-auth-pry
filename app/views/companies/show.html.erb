@@ -32,13 +32,13 @@
 
 
   <tbody>
-    <% @company.locations.each do |locations| %>
+    <% @company.locations.each do |location| %>
     <tr>
-      <td> <%= locations.city %></td>
-      <td> <%= locations.street_name %></td>
-      <td> <%= locations.state %></td>
-      <td> <%= locations.zip_code %></td>
-      <td> <%= locations.country %></td>
+      <td> <%= location.city %></td>
+      <td> <%= location.street_name %></td>
+      <td> <%= location.state %></td>
+      <td> <%= location.zip_code %></td>
+      <td> <%= location.country %></td>
     </tr>
     <% end %>
   </tbody>
