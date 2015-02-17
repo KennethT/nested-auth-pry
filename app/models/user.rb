@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   # stores it in the database
   has_secure_password
   # make sure that each user has a non-blank and unique email
-  validates :email, prescence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true
 end

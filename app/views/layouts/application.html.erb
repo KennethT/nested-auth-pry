@@ -10,10 +10,13 @@
   <header>
     <div class="logo">NestedAuthPry</div>
     <div class="login">
-    <%= form_tag login %>
-
+      <%= link_to 'Sign Up', signup_path %>
+      <%= link_to 'Sign In', signin_path %>
+      <%= link_to 'Sign Out', signout_path %>
     </div>
+
   </header>
+
   <%= yield %>
 
 </body>

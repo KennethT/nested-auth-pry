@@ -168,7 +168,11 @@ edit_company_product_review GET    /companies/:company_id/products/:product_id/r
 
 ```
 
-
+***additional notes by kt to test if we are signin within session, go add
+<% binding.pry %> to application.html.erb
+then run
+    session[:user_id] within pry
+It should return a user our user id, anything other than nil is a signed in session by defintion of what defined in our sessions controller***
 
 
 
