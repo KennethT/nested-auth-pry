@@ -18,9 +18,9 @@
   </tbody></br>
 
 
-</table>
+</table><% if current_user %>
 <td><%= link_to "Add Product", new_company_product_path(@company) %></td>
-
+<% end %>
 
 <h1> LOCATIONS</h1>
 <table border="1">
@@ -46,7 +46,7 @@
   </tbody>
 
 
-</table></br>
+</table></br><% if current_user %>
 <td><%= link_to "Add Location", new_company_location_path(@company) %></td>
-
+<% end %>
 <%= link_to 'Back', companies_path %>

@@ -17,10 +17,14 @@
     <td><%= company.email %></td>
     <td><%= company.start_date %></td>
     <td><%= company.industry %></td>
+    <% if current_user %>
     <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' }%></td>
+    <% end %>
   </tr>
   <% end %>
   </tbody>
 
 </table>
+<% if current_user %>
 <td><%= link_to "Add Company", new_company_path %></td>
+<% end %>
