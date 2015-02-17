@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-
+  before_action :authenticate, except: [:index, :show]
   def index
     @reviews = Review.all
   end

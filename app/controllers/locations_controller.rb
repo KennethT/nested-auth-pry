@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+  before_action :authenticate, except: [:index, :show]
   def index
     @locations = Location.all
   end
